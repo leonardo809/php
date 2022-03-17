@@ -1,0 +1,9 @@
+body, fieldset,form{
+    text-align: center;
+}
+body{
+    background-color: ghostwhite;
+}
+fieldset{
+    background-color: lightblue;
+}

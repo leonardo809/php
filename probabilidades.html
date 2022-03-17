@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probabilidad C y B</title>
+    <script  src="footer.js"></script>
+    <script  src="./nav.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <script src="rutas.js"></script>
+</head>
+<body>
+    <div class="portada probabilidades">
+    <mi-nav></mi-nav>
+    <h1>Explotación de redes bayesianas en el navegador</h1>
+    <div id="demo"></div>
+    <h2>Probabiliad condicional 2 puntos</h2>
+    <h3>2 puntos</h3>
+    <p>
+        <label>Mercado:</label>
+        <select id="mc1">
+            <option value='0'>1</option>
+            <option value='1'>2</option>
+            <option value='2'>3</option>
+            <option value='3'>4</option>
+        </select>
+        <label>Industria:</label>
+        <select id="ic1">
+            <option value='0'>1</option>
+            <option value='1'>2</option>
+            <option value='2'>3</option>
+            <option value='3'>4</option>
+            <option value='4'>5</option>
+            <option value='5'>6</option>
+        </select>
+        <div>Resultado:<div id="rc1"></div></div>
+        
+        </p>
+        <p>
+            <label>Industria:</label>
+            <select id="ic2">
+                <option value='0'>1</option>
+                <option value='1'>2</option>
+                <option value='2'>3</option>
+                <option value='3'>4</option>
+                <option value='4'>5</option>
+                <option value='5'>6</option>
+            </select>
+            <label>Mercado:</label>
+        <select id="mc2">
+            <option value='0'>1</option>
+            <option value='1'>2</option>
+            <option value='2'>3</option>
+            <option value='3'>4</option>
+        </select>
+        
+        <div>Resultado:<div id="rc2"></div></div>
+        
+    </p>
+    
+    
+    <h2>Probabilidad bayesiana 2 puntos</h2>
+    <h3>2 puntos</h3>
+    <p>
+        <label>Mercado:</label>
+        <select id="mb1">
+            <option value='0'>1</option>
+            <option value='1'>2</option>
+            <option value='2'>3</option>
+            <option value='3'>4</option>
+        </select>
+        <label>Industria:</label>
+        <select id="ib1">
+            <option value='0'>1</option>
+            <option value='1'>2</option>
+            <option value='2'>3</option>
+            <option value='3'>4</option>
+            <option value='4'>5</option>
+            <option value='5'>6</option>
+        </select>
+        <div>Resultado:<div id="rb1"></div></div>
+        
+        </p>
+
+         
+              <button type="button" class="btn btn-info" onclick="calcular()">Calcular</button>
+              <button type="button" class="btn btn-info" onclick="rproba()">Rextester</button>
+              <button type="button" class="btn btn-info" onclick="wproba()">w3school</button>
+     
+    <script src="probabilidades.js"></script>
+    <br>
+    <br>
+</div>
+<textarea class="form-control" id="rextester" rows="4" placeholder="Inserte el JSON"></textarea>
+          <br>
+              <button type="button" class="btn btn-success" onclick="rextes()">Enviar</button><br><br>
+        <iframe src="https://rextester.com/AXYP40967" width="100%" height="500px"></iframe>
+    <mi-footer></mi-footer>
+
+</body>
+</html>
